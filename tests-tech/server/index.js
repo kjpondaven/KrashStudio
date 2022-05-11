@@ -26,19 +26,3 @@ app.get("/search", async (req, res) => {
     res.json(resp.data.results);
   } catch (err) {}
 });
-
-app.get("/", (req, res) => {
-  res.sendFile("index.html", { root: __dirname });
-});
-
-app.get("/api", (req, res) => {
-  res.json({ message: "Hello from the server" });
-});
-
-app.get("/a", (req, res) => {
-  res.json({ message: "Hello this is a test!" });
-});
-
-app.listen(port, () => {
-  console.log(`Now listening on port ${port}`);
-});
