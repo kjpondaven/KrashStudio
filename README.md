@@ -1,3 +1,0 @@
-# KrashStudio
-
-React Exercise
