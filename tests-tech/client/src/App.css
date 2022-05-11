@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+header {
+  /* animation: App-logo-spin infinite 1s linear; */
+  height: 80px;
+  width: 100%;
+  background-color: black;
+}
+header img {
+  height: 100%;
+  margin: 0 auto;
+}
+.Main {
+  background-image: url("https://media.istockphoto.com/photos/milky-way-night-sky-picture-id529675114?b=1&k=20&m=529675114&s=170667a&w=0&h=jeqbDRkRHphg1Cu7AowLd6ZhTRXDBxR19DmFEsCvRgk=");
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Container {
+  border: 1px solid yellow;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.848);
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: small;
+  width: 80%;
+  border-radius: 15px;
+}
+.search {
+  display: flex;
+  margin: 20px auto;
+  gap: 5px;
+}
+.search input {
+  outline: none;
+  padding: 3px;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid yellow;
+}
+
+.search select {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid yellow;
+}
+.search button {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid yellow;
+  padding: 10px;
+  border-radius: 5px;
+}
+.result-details {
+  display: flex;
+  justify-content: center;
+}
+
+.result-details > div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+hr {
+  border-top: 2px dashed yellow;
+}
+h2 {
+  color: yellow;
+}
