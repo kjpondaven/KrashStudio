@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const port = 3001;
+const PORT = process.env.PORT || 3001;
 const cors = require("cors");
 const { default: axios } = require("axios");
 
@@ -25,4 +26,12 @@ app.get("/search", async (req, res) => {
     console.log(resp.data);
     res.json(resp.data.results);
   } catch (err) {}
+});
+
+app.get("/api", (req, res) => {
+  res.json({ message: "Hello from server!" });
+});
+
+app.listen(PORT, () => {
+  console.log(`Server listening on ${PORT}`);
 });
